@@ -2,7 +2,7 @@
 
 This is a write for the Hack the box challenge Emdee five for life which requires you to get a string, hash with md5 and post it back to the server with a script.
 
-For this script I used python3
+For this script I used python3.
 
 To start, I did some reconnaissance on the page. I first looked at the home page.
 
@@ -98,7 +98,7 @@ post = reqsesh.post(url=url, data=postdata)
 
 print(post.text)
 ```
-**Below is he entire script I used.**
+**Below is the entire script I used.**
 ```python
 import requests
 import re
