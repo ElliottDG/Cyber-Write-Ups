@@ -23,3 +23,12 @@ For the post, I just need to see the format of the data.
 ![Post body]('./PostHash.PNG')
 
 Ok cool! We just have to give it the hash value to get a page back.
+
+Now lets start making a script, we will need to import 3 libraries for this.
+
+```python
+import requests
+import hashlib
+import re
+```
+I have imported requests for the GET and POST, hashlib for the md5 hash and re for a regex to clean up the page to just the text, no html tags.
