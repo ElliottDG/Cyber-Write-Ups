@@ -4,4 +4,6 @@ This is a write for the Hack the box challenge Emdee five for life which require
 
 For this script I used python3
 
-To start, I did some reconnaissance on the page. I forst looked at the home page and clicked the button on the home page.
+To start, I did some reconnaissance on the page. I first looked at the home page and clicked the button on the home page.
+
+![front page]('./FrontPage.PNG')
