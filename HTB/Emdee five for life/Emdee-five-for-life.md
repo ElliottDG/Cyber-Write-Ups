@@ -20,4 +20,6 @@ I can assume the GET request will just get the page so all of the content, inclu
 
 For the post, I just need to see the format of the data.
 
-![Post body]('./PostHash.md')
+![Post body]('./PostHash.PNG')
+
+Ok cool! We just have to give it the hash value to get a page back.
