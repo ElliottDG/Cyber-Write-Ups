@@ -6,11 +6,11 @@ For this script I used python3
 
 To start, I did some reconnaissance on the page. I first looked at the home page.
 
-![front page]('./FrontPage.PNG')
+![front page](./FrontPage.PNG)
 
 Then clicked the button on the home page.
 
-![front page button clicked]('./FrontPage2.PNG')
+![front page button clicked](./FrontPage2.PNG)
 
 Ok so this needs to be done very quickly, for this to be as quick as needed I made a script to do this.
 
@@ -20,7 +20,7 @@ I can assume the GET request will just get the page so all of the content, inclu
 
 For the post, I just need to see the format of the data.
 
-![Post body]('./PostHash.PNG')
+![Post body](./PostHash.PNG)
 
 Ok cool! We just have to give it the hash value to get a page back.
 
