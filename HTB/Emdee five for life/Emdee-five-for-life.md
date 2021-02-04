@@ -33,7 +33,7 @@ import re
 ```
 I have imported requests for the GET and POST, hashlib for the md5 hash and re for a regex to clean up the page to just the text, no html tags.
 
-To start, lets get the page and clean up the text
+To start, lets get the page and clean up the text. I found a function here:https://medium.com/@jorlugaqui/how-to-strip-html-tags-from-a-string-in-python-7cb81a2bbf44
 
 ```python
 import requests
@@ -86,4 +86,43 @@ Now this gives us the string to be hashed, now lets hash it. Here we also needed
 
 ```python
 hashmd5 = hashlib.md5(out1.encode('utf-8')).hexdigest()
+```
+Now to post it back, I needed to make the data into a dictionary format so using `dict()`.
+
+Send this in a post request and print the post txt and you'll get the html to the page with the flag inside.
+
+```python
+#post
+postdata = dict(hash=hashmd5)
+post = reqsesh.post(url=url, data=postdata)
+
+print(post.text)
+```
+**Below is he entire script I used.**
+```python
+import requests
+import re
+import hashlib
+
+url = 'http://134.122.108.157:32592/'
+reqsesh = requests.session()
+
+#get
+get = reqsesh.get(url)
+htmlout = get.text
+
+def remove_html_tags(text):
+    import re
+    clean = re.compile('<.*?>')
+    return re.sub(clean, '', text)
+
+out = remove_html_tags(htmlout)
+out1 = out.split(' string')[1].strip()
+hashmd5 = hashlib.md5(out1.encode('utf-8')).hexdigest()
+
+#post
+postdata = dict(hash=hashmd5)
+post = reqsesh.post(url=url, data=postdata)
+
+print(post.text)
 ```
