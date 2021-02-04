@@ -32,3 +32,58 @@ import hashlib
 import re
 ```
 I have imported requests for the GET and POST, hashlib for the md5 hash and re for a regex to clean up the page to just the text, no html tags.
+
+To start, lets get the page and clean up the text
+
+```python
+import requests
+import re
+import hashlib
+
+url = 'http://134.122.108.157:32592/'
+reqsesh = requests.session()
+
+#get
+get = reqsesh.get(url)
+htmlout = get.text
+
+def remove_html_tags(text):
+    import re
+    clean = re.compile('<.*?>')
+    return re.sub(clean, '', text)
+
+out = remove_html_tags(htmlout)
+```
+Now we can see the difference between htmlout and out when run in terminal.
+
+#### htmlout
+
+```html
+b'<html>\n<head>\n<title>emdee five for life</title>\n</head>\n<body style="background-color:powderblue;">\n<h1 align=\'center\'>MD5 encrypt this string</h1><h3 align=\'center\'>mvVoJk69QZU5odOlLvlD</h3><center><form action="" method="post">\n<input type="text" name="hash" placeholder="MD5" align=\'center\'></input>\n</br>\n<input type="submit" value="Submit"></input>\n</form></center>\n</body>\n</html>\n'
+```
+
+#### out
+
+```
+
+
+emdee five for life
+
+
+MD5 encrypt this string5qCtfsTKoTSLoN978ghZ
+
+
+
+```
+
+The html has been stripped away but we still have the rest of the text. Next I used `split()` and `Strip()` to just get the hash.
+
+```python
+out1 = out.split(' string')[1].strip()
+```
+
+Now this gives us the string to be hashed, now lets hash it. Here we also needed to encode the data to bytes.
+
+```python
+hashmd5 = hashlib.md5(out1.encode('utf-8')).hexdigest()
+```
