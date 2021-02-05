@@ -45,3 +45,13 @@ $ git log
 That second one down looks interesting:
 
 ![Interesting Git Log](./InterestingGitLog.PNG)
+
+This is saying that the token was removed and pushed onto the repository. Great! This means we can show this using:
+
+```bash
+$ git show 47241a47f62ada864ec74bd6dedc4d33f4374699
+```
+This will show an edit with the token in red showing it was removed and the text we just saw in the JSON above.
+
+### Note
+**This is in Base64 so this will need to be decoded for the flag. A good tell tale as to why is the string ending in =.**
