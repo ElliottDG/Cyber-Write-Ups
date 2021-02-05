@@ -38,6 +38,6 @@ There are some important things to note about this script. First there are 3 arr
 
 In the log files we need to clear everything we don't need to get a list of serial numbers, I did this with a regex. `r = re.compile("usb \d-\d: SerialNumber: ([0-9A-F]+)")`
 
-Lastly python uses in for JSON so we used `not in` so that the one that is not there is produced in the print statement.
+Lastly python uses `in` for JSON so we used `not in` so that the one that is not there is produced in the print statement.
 
 The output will be a string hashed to length 32, length 32 strings that are hashed are md5 hashed. Just put `HTB{[hash cracked string]}` into your hack that box flag submission and that is the flag for the challenge
