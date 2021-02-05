@@ -1,5 +1,5 @@
 # Templated
-<!--{% raw %}-->
+
 This is a write up to the Hack The Box challenge Templated which exploits vulnerabilities in SSTI (server side template injection)
 
 The front page of the site has this.
@@ -46,4 +46,3 @@ looking at the files returned, we can just cat flag.txt as that will contain our
 ```
 
 which will return a flag where the page name normally is.
-<!--{% endraw %}-->
