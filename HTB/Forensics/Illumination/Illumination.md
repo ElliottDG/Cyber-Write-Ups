@@ -35,7 +35,7 @@ This is what we see when opening it:
 
 }
 ```
-Hmmm, that top line is interesting. The token has been replaced for a security risk. These is a chance a developer has left this in the git logs. Thats what we can look at next. To do this just traverse in the terminal into the folder holding the `.git`. This is what you'll see when you use the command:
+Hmmm, that top line is interesting. The token has been replaced for a security risk. There is a chance a developer has left this in the git logs. That's what we can look at next. To do this just traverse in the terminal into the folder holding the `.git`. This is what you'll see when you use the command:
 
 ```bash
 $ git log
