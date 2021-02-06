@@ -1,3 +1,5 @@
+[Home](https://elliottdg.github.io/Cyber-Write-Ups)
+
 # USB RIPPER
 
 This a write-up to the hack the box challenge USB RIPPER.

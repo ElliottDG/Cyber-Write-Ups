@@ -1,3 +1,5 @@
+[Home](https://elliottdg.github.io/Cyber-Write-Ups)
+
 # Illumination
 
 This forensics challenge is by hack the box and exploits leaving security breaches in git logs.
