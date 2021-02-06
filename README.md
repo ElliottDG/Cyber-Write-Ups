@@ -1,5 +1,7 @@
 # Cyber-Write-Ups
 
+[Link to repo](https://github.com/ElliottDG/Cyber-Write-Ups)
+
 ---
 
 ## Hack the box
