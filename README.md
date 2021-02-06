@@ -14,4 +14,4 @@
 
 [Illumination](https://elliottdg.github.io/Cyber-Write-Ups/HTB/Forensics/Illumination/Illumination)
 
-[USB RIPPER]()
+[USB RIPPER](https://elliottdg.github.io/Cyber-Write-Ups/HTB/Forensics/USB%20RIPPER/USB-RIPPER)
