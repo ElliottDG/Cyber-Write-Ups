@@ -1,4 +1,11 @@
 # Cyber-Write-Ups
-Write-ups for ctfs for a number of different challenges, sites and events.
 
-Each different folder will have a markdown file with the name of the folder, this is the write up.
+---
+
+## Hack the box
+
+### web
+
+[Templated](https://elliottdg.github.io/Cyber-Write-Ups/HTB/Web/Templated/Templated)
+
+[Emdee five for life](https://elliottdg.github.io/Cyber-Write-Ups/HTB/Web/Emdee%20five%20for%20life/Emdee-five-for-life)
