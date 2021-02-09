@@ -1,3 +1,5 @@
+[Home](https://elliottdg.github.io/Cyber-Write-Ups/)
+
 # Took The Byte
 
 This is a hack the box challenge that looks at recovering a file by suing an XOR to find the original type.
