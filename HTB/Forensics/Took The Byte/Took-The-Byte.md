@@ -7,3 +7,5 @@ In this challenge we get given a file called `password` and this file cannot be 
 The first thing I did was binwalk the file to see if that would display anything but it did not.
 
 After that the next step was to xxd the file and see what comes up. This is that below:
+
+[xxd out](./xxd.PNG)
