@@ -22,4 +22,4 @@
 
 ## TryHackMe
 
-[The Marketplace]
+[The Marketplace](https://elliottdg.github.io/Cyber-Write-Ups/THM/TheMarketplace/TheMarketplace)
