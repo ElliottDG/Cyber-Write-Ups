@@ -19,3 +19,7 @@
 [USB RIPPER](https://elliottdg.github.io/Cyber-Write-Ups/HTB/Forensics/USB%20RIPPER/USB-RIPPER)
 
 [Took The Byte](https://elliottdg.github.io/Cyber-Write-Ups/HTB/Forensics/Took%20The%20Byte/Took-The-Byte)
+
+## TryHackMe
+
+[The Marketplace]
