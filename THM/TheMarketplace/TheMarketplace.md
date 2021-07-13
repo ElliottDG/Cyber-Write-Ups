@@ -42,7 +42,7 @@ This essentially forwards the cookie to the webserver set up on that ip and port
 
 Can set up the python server using `python3 -m http.server` and this will just capture anything coming through on you VPN IP on port 8000.
 
-We then just create a listing with the XSS and then report it so the admin looks at it and we should have the admin cookie. Notice when you create the listing the page is now your directory, this doesnt help us so we need to know how it is being reported. If you just hover over another report listing we can see its in the format `http://<ip>/report/3` with 3 being the 3rd product on them name. well just amend to your XSS product number and report and watch the admin cookie come through.
+We then just create a listing with the XSS and then report it so the admin looks at it and we should have the admin cookie. Notice when you create the listing the page is now your directory, this doesn't help us so we need to know how it is being reported. If you just hover over another report listing we can see its in the format `http://<ip>/report/3` with 3 being the 3rd product on them name. well just amend to your XSS product number and report and watch the admin cookie come through.
 
 Then just change your cookie and refresh, the first flag on the admin panel!
 
@@ -50,7 +50,7 @@ Then just change your cookie and refresh, the first flag on the admin panel!
 
 Well now we have admin, before the cookie expires we need to do some looking about. Notice that on the page we are michael but we can see jake is also an admin. (Knowing the nature of CTFS we probably wana get into jakes account as we know ssh port is open).
 
-![Panel](./Panel.PNG)
+![Panel](./panel.PNG)
 
 You can actually click on those boxes. I noticed that the URL changed and it seemed to be searching for information so I added something to the end of the URL and got an error. Googling the error revealed it was a MySQL error. Nice so from here can assume we need to SQL inject.
 
@@ -58,7 +58,7 @@ Be aware if you trigger a bad gateway your cookie expires and you'll need to gra
 
 Now I noticed adding ` password` didn't kick me out but let me continue and when I changed the number to an account that doesnt exist I get an SQL error. Now by looking at the page I can see 4 different things being displayed. User ID or number, name, ID again and if it has admin so we know 4 fields being show so in order to union ill pad 3 other results.
 
-One useful thing to know in MySQL is the `GROUP_CONCAT()` function which groups all data onto one line which is greate for output. ![Docs](./https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php). Same with `database()` which returns the database name.
+One useful thing to know in MySQL is the `GROUP_CONCAT()` function which groups all data onto one line which is greate for output. ![Docs](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php). Same with `database()` which returns the database name.
 
 ![database](./Database.PNG)
 
