@@ -22,15 +22,15 @@ I can also create a new listing.
 
 ## Flag 1
 
-[Listing](./NewListing.PNG)
+![Listing](./NewListing.PNG)
 
 Some textboxes, can we XSS? I'll test with `<script>alert('xss');</script>`.
 
-[xss](./xss.PNG)
+![xss](./xss.PNG)
 
 Great! Now we can try and get hold of some admin access to the website using cookie grabbing.
 
-Personally I didn't know how to do this from the start so I did some googling about and found an article ![here](https://medium.com/@laur.telliskivi/pentesting-basics-cookie-grabber-xss-8b672e4738b2) which does basically what I want to do. This is how I amended it to this.
+Personally I didn't know how to do this from the start so I did some googling about and found an article [here](https://medium.com/@laur.telliskivi/pentesting-basics-cookie-grabber-xss-8b672e4738b2) which does basically what I want to do. This is how I amended it to this.
 
 On the article there is the following xss script:
 
@@ -58,7 +58,7 @@ Be aware if you trigger a bad gateway your cookie expires and you'll need to gra
 
 Now I noticed adding ` password` didn't kick me out but let me continue and when I changed the number to an account that doesnt exist I get an SQL error. Now by looking at the page I can see 4 different things being displayed. User ID or number, name, ID again and if it has admin so we know 4 fields being show so in order to union ill pad 3 other results.
 
-One useful thing to know in MySQL is the `GROUP_CONCAT()` function which groups all data onto one line which is greate for output. ![Docs](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php). Same with `database()` which returns the database name.
+One useful thing to know in MySQL is the `GROUP_CONCAT()` function which groups all data onto one line which is greate for output. [Docs](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php). Same with `database()` which returns the database name.
 
 ![database](./Database.PNG)
 
