@@ -1,4 +1,4 @@
-# Mr Robot CTFS
+# Mr Robot CTF
 
 Mr Robot CTF is a CTF that uses a brute force attack and linux priv esc once access is gained to a user server side.
 
