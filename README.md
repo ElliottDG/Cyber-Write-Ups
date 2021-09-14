@@ -24,4 +24,4 @@
 
 [The Marketplace](https://elliottdg.github.io/Cyber-Write-Ups/THM/TheMarketplace/TheMarketplace)
 
-[MrRobot](https://elliottdg.github.io/Cyber-Write-Ups/THM/MrRobot/MrRobot.md)
+[MrRobot](https://elliottdg.github.io/Cyber-Write-Ups/THM/MrRobot/MrRobot)
